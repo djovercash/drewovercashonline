@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+  position: absolute;
+  background-color: #E3E3E3;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(36, 75, 75, 0.8);
+  box-shadow: 2px 2px 2px 0px #898989;
+  z-index: 10;
+}
+
+#navbar a{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFDBBB;
+}
+
+#navbarLogo {
+  margin-left: 2.5%;
+}
+
+#navbarNavigation {
+  margin-right: 2.5%;
+}
+
+#mainContainer {
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  margin-top: 12%;
+}
+
+#home h1 {
+  font-size: 1000%;
+  margin: 0px auto;
+}
+
+#home h3{
+  font-size: 300%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#home a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFDBBB;
+  background-color: rgba(36, 75, 75, 0.8);
+  box-shadow: 2px 2px 2px 2px #898989;
+}
+
+.mainDetails {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#TheatreSelectedVideo {
+  width: 400px;
+  height: 300px;
+}
+
+#selectedVideo {
+  width: 400px;
+  height: 300px;
+}
+
+#nonSelectedVideo {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/YoutubeStandIn.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#selectedVideo h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#selectedVideo h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#videos {
+  display: flex;
+  justify-content: space-around;
+}
+
+#videoListItems li {
+  list-style-type: none;
+  text-align: left;
+  padding: 2.5px;
+  border: 1px solid black;
+  background-color: gray;
+}
+
+#webDemos {
+  display: flex;
+  justify-content: space-around;
+}
+
+#webDemo {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#webDemo h2 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#webDemo p {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.logo {
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+  color: #FFDBBB;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(36, 75, 75, 0.8);
+  color: #FFDBBB;
+}
+
+#copyright {
+  margin-left: 2.5%;
+}
+
+#socialPlatforms {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2.5%;
+}
+
+#socialPlatforms a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFDBBB;
+}
+
+#emailSubmit {
+  color: #FFDBBB;
+  background-color: rgba(36, 75, 75, 0.8);
+  box-shadow: 2px 2px 2px 0px #898989;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
