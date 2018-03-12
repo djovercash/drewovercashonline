@@ -17,6 +17,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5%;
   background-color: rgba(36, 75, 75, 0.75);
   box-shadow: 2px 2px 2px 0px #898989;
   z-index: 10;
