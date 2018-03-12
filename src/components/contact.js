@@ -1,6 +1,7 @@
 import React from 'react'
 
-const EMAILURL = 'http://localhost:3000/emails'
+const EMAILURL = 'https://tranquil-dusk-11081.herokuapp.com/emails'
+// const EMAILURL = "http://localhost:3000/emails"
 
 class Contact extends React.Component{
   state = {
@@ -29,23 +30,28 @@ class Contact extends React.Component{
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.sendEmail(this.state)
-    .then(data => {
+    if (this.state.name !== '' && this.state.email !== '' && this.state.subject !== '' && this.state.body !== ''){
+      this.sendEmail(this.state)
       this.setState({
         name: '',
         email: '',
         subject: '',
         body: '',
-        message: data.message
+        message: 'Thanks for the email! I will get back to you soon.'
       })
-    })
+    } else {
+      this.setState({
+        message: 'Not all fields are filled out. Please fill out all fields'
+      })
+    }
   }
 
+//UPDATEING IS HAVING A PROBLEM
   sendEmail(state) {
     return fetch(EMAILURL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json", "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify({
         name: state.name,
@@ -54,7 +60,6 @@ class Contact extends React.Component{
         body: state.body
       })
     })
-    .then(res => res.json())
   }
 
 

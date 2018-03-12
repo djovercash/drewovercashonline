@@ -11,7 +11,7 @@ const WebDevelopmentDemo = (props) => {
          width='100%'
          height='100%'
        />
-       <h2>{props.project.title} | <a href={props.project.github_link} target="_blank"><img className="logo" src='github_logo.png' alt="github_logo"/></a></h2>
+       <h2 className="webProject">{props.project.title} | <a href={props.project.github_link} target="_blank"><img className="logo" src='github_logo.png' alt="github_logo"/></a></h2>
        <p>{props.project.description}</p>
     </div>
   )

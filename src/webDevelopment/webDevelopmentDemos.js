@@ -3,7 +3,7 @@ import WebDevelopmentDemo from './webDevelopmentDemo'
 
 const WebDevelopmentDemos = (props) => {
   return (
-    <div>
+    <div id="webDemosContainer">
       <h2>Checkout what Drew is currently working on!</h2>
       <div id="webDemos">
         {props.projects.map((project, index) => {

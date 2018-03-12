@@ -8,8 +8,11 @@ import Footer from './components/footer'
 import Contact from './components/contact'
 import './App.css';
 
-const SONGURL = "http://localhost:3000/songs"
-const PROJECTURL = "http://localhost:3000/projects"
+const SONGURL = "https://tranquil-dusk-11081.herokuapp.com/songs"
+const PROJECTURL = "https://tranquil-dusk-11081.herokuapp.com/projects"
+
+// const PROJECTURL = "http://localhost:3000/projects"
+// const SONGURL = "http://localhost:3000/songs"
 
 class App extends Component {
 
