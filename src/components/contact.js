@@ -76,7 +76,7 @@ class Contact extends React.Component{
           <label>Subject</label><br/>
           <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange}/><br/>
           <label>Body</label><br/>
-          <textarea col="30" row="30" name="body" value={this.state.body} onChange={this.handleChange}/><br/>
+          <textarea col="50" row="50" name="body" value={this.state.body} onChange={this.handleChange}/><br/>
           <input id="emailSubmit" type="submit" value="Submit"/>
         </form>
       </div>

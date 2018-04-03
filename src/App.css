@@ -84,6 +84,13 @@ a {
   margin-bottom: 0px;
 }
 
+.mainDetails p {
+  padding: 2%;
+  color: rgb(255, 219, 187);
+  background-color: rgba(36, 75, 75, 0.75);
+  box-shadow: 2px 2px 2px 0px #898989;
+}
+
 
 #TheatreSelectedVideo {
   width: 400px;
