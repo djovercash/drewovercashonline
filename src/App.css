@@ -70,6 +70,11 @@ a {
   box-shadow: 2px 2px 2px 2px #898989;
 }
 
+#home a:hover{
+  background-color: rgb(255, 219, 187);
+  color:rgb(36, 75, 75);
+}
+
 .mainDetails {
   margin-left: 20%;
   margin-right: 20%;
