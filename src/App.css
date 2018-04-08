@@ -92,6 +92,16 @@ a {
   box-shadow: 2px 2px 2px 0px #898989;
 }
 
+#emailDetails {
+  background-color: rgba(36, 75, 75, 0.75);
+}
+
+#emailDetails h1 {
+  color: rgb(255, 219, 187);
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
 
 #TheatreSelectedVideo {
   width: 400px;

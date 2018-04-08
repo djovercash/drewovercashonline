@@ -65,20 +65,27 @@ class Contact extends React.Component{
 
   render() {
     return (
-      <div id="mainDetails">
-        <h1>Reach out!</h1>
-        <h2>{this.state.message !== '' ? this.state.message : null}</h2>
-        <form onSubmit={this.handleSubmit}>
-          <label>Name</label><br/>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/><br/>
-          <label>Email</label><br/>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/><br/>
-          <label>Subject</label><br/>
-          <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange}/><br/>
-          <label>Body</label><br/>
-          <textarea col="50" row="50" name="body" value={this.state.body} onChange={this.handleChange}/><br/>
-          <input id="emailSubmit" type="submit" value="Submit"/>
-        </form>
+      <div>
+        <div id="emailDetails">
+          <h1>Reach out!</h1>
+          <h2>{this.state.message !== '' ? this.state.message : null}</h2>
+          <form onSubmit={this.handleSubmit}>
+            <label>Name</label><br/>
+            <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/><br/>
+            <label>Email</label><br/>
+            <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/><br/>
+            <label>Subject</label><br/>
+            <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange}/><br/>
+            <label>Body</label><br/>
+            <textarea col="50" row="50" name="body" value={this.state.body} onChange={this.handleChange}/><br/>
+            <input id="emailSubmit" type="submit" value="Submit"/>
+          </form>
+          </div>
+        <div>
+          <a href="https://github.com/djovercash/Resume/raw/master/DOvercash_Resume.pdf" download>
+            <button>Download</button>
+          </a>
+        </div>
       </div>
     )
   }
