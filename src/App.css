@@ -101,6 +101,8 @@ a {
 #topEmailDetails {
   display: flex;
   justify-content: space-around;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #emailDetails label {
@@ -123,6 +125,20 @@ a {
   color: rgb(255, 219, 187);
   padding-top: 10px;
   margin-bottom: 0px;
+}
+
+#contactDetails h3 {
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+#contactDetails h3>a {
+  text-decoration: none;
+  color: rgb(255, 219, 187);
+}
+
+#contactDetails h3>a:hover {
+  color: rgb(36, 75, 75);
 }
 
 
@@ -247,16 +263,34 @@ a {
   margin-right: 2.5%;
 }
 
+#socialPlatformsContact {
+  display: flex;
+  justify-content: center;
+}
+
 #socialPlatforms a {
   margin-left: 10px;
   margin-right: 10px;
   color: rgb(255, 219, 187);
 }
 
+#socialPlatformsContact h5 {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+#socialPlatformsContact h5:hover {
+  width: 10%;
+  height: 10%;
+}
+
 .contactActionButton {
   color: rgb(255, 219, 187);
   background-color: rgba(36, 75, 75, 0.75);
   box-shadow: 2px 2px 2px 0px rgb(137,137,137);
+  padding: 1% 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .contactActionButton:hover {
@@ -270,8 +304,7 @@ a {
 }
 
 textarea {
-  height: 300px;
-  width: 300px;
+  width: 90%;
 }
 
 .App-logo {
