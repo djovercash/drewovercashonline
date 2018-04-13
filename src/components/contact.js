@@ -65,25 +65,28 @@ class Contact extends React.Component{
 
   render() {
     return (
-      <div>
+      <div id="contactContainer">
         <div id="emailDetails">
           <h1>Reach out!</h1>
           <h2>{this.state.message !== '' ? this.state.message : null}</h2>
           <form onSubmit={this.handleSubmit}>
-            <label>Name</label><br/>
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/><br/>
-            <label>Email</label><br/>
-            <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/><br/>
-            <label>Subject</label><br/>
-            <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange}/><br/>
+            <div id="topEmailDetails">
+              <label>Name:  </label>
+              <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/><br/>
+              <label>Email:  </label>
+              <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/><br/>
+              <label>Subject:  </label>
+              <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange}/><br/>
+            </div>
             <label>Body</label><br/>
-            <textarea col="50" row="50" name="body" value={this.state.body} onChange={this.handleChange}/><br/>
-            <input id="emailSubmit" type="submit" value="Submit"/>
+            <textarea name="body" value={this.state.body} onChange={this.handleChange}/><br/>
+            <input className="contactActionButton" type="submit" value="Submit"/>
           </form>
-          </div>
-        <div>
+        </div>
+        <div id="contactDetails">
+          <h1>Download my resume</h1>
           <a href="https://github.com/djovercash/Resume/raw/master/DOvercash_Resume.pdf" download>
-            <button>Download</button>
+            <button className="contactActionButton">Download</button>
           </a>
         </div>
       </div>
