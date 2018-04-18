@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div id="footer">
       <div id="copyright">
-        <h5>@drewovercash 2018</h5>
+        <h5>&copy;drewovercash 2018</h5>
       </div>
       <div id="socialPlatforms">
         <h5><a href="https://www.linkedin.com/in/drewovercash/" target="_blank" rel="noopener noreferrer"><img className="logo" src="linkedin_logo.png" alt="LinkedIn" /></a></h5>

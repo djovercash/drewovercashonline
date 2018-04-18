@@ -311,6 +311,8 @@ a {
   align-content: center;
 }
 
+
+/* Footer Styling */
 #footer {
   display: flex;
   position: absolute;
@@ -319,7 +321,7 @@ a {
   height: 5%;
   margin: 0 auto;
   line-height: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: rgba(36, 75, 75, 0.75);
   color: rgb(255, 219, 187);
@@ -327,24 +329,42 @@ a {
 
 #copyright {
   margin-left: 2.5%;
+  font-size: 5vw;
 }
 
 #socialPlatforms {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 2.5%;
+  display: none;
 }
+
+@media only screen and (min-width: 530px) {
+  #footer {
+    justify-content: space-between;
+  }
+
+  #copyright {
+    font-size: 16px;
+  }
+
+  #socialPlatforms {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2.5%;
+  }
+
+  #socialPlatforms a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(255, 219, 187);
+  }
+}
+
+
 
 #socialPlatformsContact {
   display: flex;
   justify-content: center;
 }
 
-#socialPlatforms a {
-  margin-left: 10px;
-  margin-right: 10px;
-  color: rgb(255, 219, 187);
-}
 
 #socialPlatformsContact h5 {
   margin-left: 1%;
