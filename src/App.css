@@ -50,11 +50,16 @@ a {
   margin-left: 2%;
 }
 
+#navbarNavigationMobile h1 {
+  font-size: 180%;
+  font-size: 7vw;
+}
+
 .mobileNavbarIcon {
   width: 40%;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 530px) {
   #navbarNavigationMobile {
     display: none;
   }
